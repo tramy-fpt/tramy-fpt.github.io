@@ -1,0 +1,312 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.food-wrapper{
+    height: 100%;
+    max-width: 100%;
+    /* height: 600px; */
+    margin: auto;
+}
+*{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+.w40{
+    width: 40%;
+}
+.w50{
+    width: 50%;
+}
+.w60{
+    width: 60%;
+}
+.w100{
+    width: 100%;
+}
+.fl{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.mb0{
+    margin-bottom: 0%;
+}
+.mb3{
+    margin-bottom: 3%;
+}
+/* FOOD */
+.food-img, .food-img img{
+    height: 100%;
+    overflow: hidden;
+}
+
+.food-title {
+    height: 20%;
+}
+.food-title h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+.content{
+    height: 100%;
+}
+.items{
+    /* height: 485px; */
+    height: 80%;/* test */
+    overflow: scroll;
+}
+.item-title{
+    margin: 0;
+}
+::-webkit-scrollbar {
+    /* -webkit-appearance: none;  */ /* KHÔNG DÙNG */
+    width: 3px;
+} 
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(63, 63, 63, 0.5);
+    /* -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5); */ /* KHÔNG DÙNG */
+}
+.item-img img{
+    width: 60%;
+    border-radius: 50%;
+}
+.item-img{
+    text-align: center;
+}
+.food-price{
+    margin: 5% 0;
+    color: black;
+
+}
+/* .w50 p {
+    color: black;
+} */
+
+/* BURGER */
+.burger{
+    /* height: 100%; thay đổi thành 100% để full window */
+    background: linear-gradient(to right, rgb(101, 219, 194) 30%, white 100%);
+    border-radius: 0 0 0 20%;
+}
+.main-burger-img img{
+    border-radius: 0 20% 0 20%;
+}
+
+/* CHICKEN */
+.chicken{
+    /* height: 100%; thay đổi thành 100% để full window */
+    background: linear-gradient(to bottom, rgb(235, 226, 112) 30%, white 100%);
+    border-radius: 30% 0 0 30%;
+}
+.main-chicken-img img{
+    border-radius: 30%;
+}
+/* SIDE DISHES */
+.side-dishes{
+    /* height: 100%; */
+    background: linear-gradient(to bottom, rgb(243, 200, 108) 30%, white 100%);
+}
+/* BEVERAGE */
+.beverage{
+    /* height: 100%; */
+    background: linear-gradient(to bottom, rgb(243, 146, 108) 10%, white 40%, white 60%, rgb(243, 146, 108) 90%);
+    border-radius: 30% 0 0 30%;
+}
+/* DESSERT */
+.dessert{
+    /* height: 100%; */
+    background: linear-gradient(to bottom, rgb(241, 123, 186) 30%, white 100%);
+    border-radius: 0 0 0 20%;
+}
+.main-dessert-img img{
+    border-radius: 0 20% 0 20%;
+}
+
+#chicken, #side-dishes, #burger, #beverage{
+    display: block;
+}
+/* TEST */
+/* .main-burger-img img{
+    width: 100%;
+} */ /* không có thì không responsive*/
+.food-img img{
+    width: 100%;
+}
+
+/* CART */
+/* .cart-total {
+    background-image: url("https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    opacity: 30%;
+} */
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 50px;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 35px;
+    color: #333;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row {
+    display: flex;
+}
+.cart-item {
+    width: 45%;
+}
+.cart-price {
+    width: 20%;
+    font-size: 35px;
+    color: #333;
+}
+.cart-quantity {
+    width: 35%;
+}
+.cart-item-title {
+    color: #333;
+    font-size: 35px;
+}
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.cart-total {
+    text-align: end;
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price {
+    color: #333;
+    font-size: 33px;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 50px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .food-img, .food-img img {
+        height: 80%;
+        margin-top: 20%;
+    }
+    .food-title{
+        position: relative;
+    }
+    .food-title h2{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .item{
+        margin-bottom: 10%;
+    }
+    .food{
+        border-radius: 0%;
+    }
+    .food-img {
+        display: none;
+    }
+    .food-content{
+        width: 100%;
+    }
+    .food-title{
+        position: relative;
+    }
+    .food-title h2{
+        font-size: 80px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* -ms-transform: translate(-50%, -50%); */
+        transform: translate(-50%, -50%);
+        /* LÝ DO TOP LEFT 50% LẠI KO ĐƯA VÀO 1 NỬA MÀ PHẢI THÊM TRANSFORM? */
+
+    }
+    .item{
+        margin-bottom: 10%;
+        width: 50%;
+        float: left;
+    }
+}
+@media only screen and (max-width: 450px) {
+    /* .food{
+        border-radius: 0%;
+    }
+    .food-img {
+        display: none;
+    }
+    .food-content{
+        width: 100%;
+    }
+    .food-title{
+        position: relative;
+    } */
+    .food-title h2{
+        font-size: 60px;
+        /* margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+    .item{
+        width: 100%;
+        clear: both;
+    }
+  }
+
+
+
+  /* .cart-total {
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-total::after {    
+      content: "";
+      background-image: url('https://images.unsplash.com/photo-1481819167214-0427aac02394?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+      background-size: cover;
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      z-index: 1;
+      height: 100%;
+     width: 100%;
+} */

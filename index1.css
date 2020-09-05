@@ -1,0 +1,173 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.background-image {
+    background-image: url('https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=2098&q=80');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    margin: auto;
+    width: 20%;
+}
+h1 {
+    text-align: center;
+    font-size: 100px;
+    height: 100px;
+    color: #0aaddf;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #3678cf, 0 14px 0 #0239ee, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+}
+.title p {
+    text-align: center;
+    color: rgb(243, 231, 231);
+    font-size: xx-large;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic; 
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #3678cf, 0 14px 0 #0239ee, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+}
+.layout-survey {
+    position: relative;
+    display: visible;
+}
+.menuSlide {
+    height: 92%;
+}
+.one {
+    display: none;
+}
+.two{
+    display: none;
+}
+.three{
+    display: none;
+}
+.four{
+    display: none;
+}
+.five{
+    display: none;
+}
+.title {
+    width: 100%;
+    top: 100px;
+    position: absolute;
+}
+
+.icon-bar {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.icon-bar a i::before {
+    float: none;
+    padding: 10px 3px ;
+    transition: all 0.3s ease;
+    color:rgb(29, 29, 29);
+    font-size: 1.5em;
+}
+.icon-bar a i:hover {
+    background-color: rgb(206, 201, 201);
+}
+.cart {
+    content: "\f218";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 5em;
+}
+.icon-bar .cart {
+    float: right;
+}
+.dot-home {
+    content: "\f015";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color:rgb(145, 131, 6);
+}
+.icon-bar a i::before {
+    float: none;
+    padding: 10px 3px ;
+    transition: all 0.3s ease;
+    color:rgb(29, 29, 29);
+    font-size: 1.5em;
+}
+.hover:hover{
+    background-color: #918b8b;
+}
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+} 
+.dot {
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+    margin: 0 40px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+
+
